@@ -1,8 +1,9 @@
-TP bilan
+--------------------------------------- TP bilan ---------------------------------------------------------------------
 
-Creation d’un script BASH :
+- Creation d’un script BASH :
 
 fichier txt « install_docker.sh crée avec dedans :
+
 
 # Mettre à jour les sources de paquets
 echo "Mise à jour des sources de paquets..."
@@ -40,25 +41,25 @@ et on lance le script
 #./installdocker.sh
 
 
-Install de wordpress :
+- Install de wordpress :
 
 #docker pull wordpress
 #docker run –name wordpress -p 8081(c’est votre port au choix)/80 -d wordpress
 
 
 
-Docker push :
+- Docker push :
 
 Création d’un repertoire tp-bilan à la racine :
 
 #mkdir tp-bilan
 
 
-Initialisation du repository git (ici ~/tp-bilan) :
+- Initialisation du repository git (ici ~/tp-bilan) :
 # git init
 
 
-Configurer git :
+- Configurer git :
 #git config --global user.name "votre nom"
 #git config --global user.email "votre email"
 
@@ -75,22 +76,23 @@ Renommer la branche locale master en main :
 #git branch -m master main
 
 
-SSH:
+- SSH:
+
 Génération de la clé :
 #ssh-keygen -t rsa -b 4096 -C "votre.email@example.com"
 
 
 
-activation de l’agent ssh et y ajoute une clé :
+- activation de l’agent ssh et y ajoute une clé :
 #eval "$(ssh-agent -s)"
 #ssh-add ~/.ssh/id_rsa
 
 
-Clé ssh sur github :
+- Clé ssh sur github :
 
 #cat ~/.ssh/id_rsa.pub
 
-Ajouter la clé sur GitHub
+- Ajouter la clé sur GitHub
     1. Connectez-vous à votre compte GitHub.
     2. Allez dans Settings (en haut à droite de la page GitHub).
     3. Dans le menu à gauche, cliquez sur SSH and GPG keys.
@@ -98,7 +100,7 @@ Ajouter la clé sur GitHub
     5. Donnez un titre à votre clé (par exemple, "Clé SSH Debian") et collez la clé publique copiée dans le champ Key.
     6. Cliquez sur Add SSH key.
 
-Création d’un repertoire sur github puis :
+- Création d’un repertoire sur github puis :
 
 #git remote add origin git@github.com:(nom de user github) (/chemin vers votre dossier).git
 
